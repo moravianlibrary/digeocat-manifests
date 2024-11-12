@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vdc-api
+spec:
+  template:
+    spec:
+      containers:
+        - name: vdc-api
+          image: ghcr.io/moravianlibrary/vdc-api:e6884d7db86e866d8634b4454d02665e58a8d578
