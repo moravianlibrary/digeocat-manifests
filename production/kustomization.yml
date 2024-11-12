@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: vdc-digeocat-prod
+
+resources:
+- git@gitlab.mzk.cz:osdd/deploys/digeocat.git/production
+
+images:
+- name: mzk.cz/vdc-api
+  newName: ghcr.io/moravianlibrary/vdc-api
+  newTag: latest
+- name: mzk.cz/vdc-frontend
+  newName: ghcr.io/moravianlibrary/vdc-frontend
+  newTag: latest
