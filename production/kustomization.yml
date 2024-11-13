@@ -3,6 +3,14 @@ kind: Kustomization
 
 namespace: vdc-digeocat-prod
 
-patchesStrategicMerge:
-  - patch-image-api.yml
-  - patch-image-frontend.yml
+resources:
+  - vdc-api.yml
+  - vdc-frontend.yml
+
+images:
+- name: mzk.cz/vdc-api
+  newName: ghcr.io/moravianlibrary/vdc-api
+  newTag: latest
+- name: mzk.cz/vdc-frontend
+  newName: ghcr.io/moravianlibrary/vdc-frontend
+  newTag: latest
