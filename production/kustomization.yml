@@ -4,5 +4,5 @@ kind: Kustomization
 namespace: vdc-digeocat-prod
 
 patchesStrategicMerge:
-  - patch-images-api.yml
-  - patch-images-frontend.yml
+  - patch-image-api.yml
+  - patch-image-frontend.yml
