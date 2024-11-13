@@ -3,9 +3,6 @@ kind: Kustomization
 
 namespace: vdc-digeocat-prod
 
-resources:
-- git@gitlab.mzk.cz:osdd/deploys/digeocat.git/production
-
 images:
 - name: mzk.cz/vdc-api
   newName: ghcr.io/moravianlibrary/vdc-api
