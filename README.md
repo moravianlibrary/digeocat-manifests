@@ -6,4 +6,4 @@ Tento repozitář slouží k specifikaci Docker image pro aplikaci Digeocat, kte
 ### Jak změnit image
 - V souboru `production/kustomization.yml` změnit hodnoty `newName` a `newTag`. 
 - Commitnout změny v `main` větvi
-- Sledovat který commit hash je v produkci dle README.md NEBO synchronizovat stav souborů v Githubu s ArgoCD 
+- Nová verze image se nasadí automaticky (cca pár minut), ale lze také synchronizovat novou specifikaci ručně v [ArgoCD](argocd.osdd.mzk.cz) 
