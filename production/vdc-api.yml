@@ -43,7 +43,17 @@ spec:
                 name: vdc-api-env-config
           volumeMounts:
             - name: app-data
-              mountPath: /app/data              
+              mountPath: /app/data
+        - name: vdc-tasks
+          image: mzk.cz/vdc-api
+          command: ["start-task"]
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: vdc-api-env-config
+          volumeMounts:
+            - name: app-data
+              mountPath: /app/data          
       volumes:
         - name: app-data
           persistentVolumeClaim:
