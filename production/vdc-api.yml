@@ -46,7 +46,7 @@ spec:
               mountPath: /app/data
         - name: vdc-tasks
           image: mzk.cz/vdc-api
-          command: ["start-task"]
+          command: ["start-tasks"]
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
