@@ -41,7 +41,9 @@ spec:
           envFrom:
             - configMapRef:
                 name: vdc-api-env-config
-          volumeMounts:
+            - secretRef:
+                name: django-secrets
+          volumeMounts: 
             - name: app-data
               mountPath: /app/data
         - name: vdc-tasks
@@ -51,6 +53,8 @@ spec:
           envFrom:
             - configMapRef:
                 name: vdc-api-env-config
+            - secretRef:
+                name: django-secrets
           volumeMounts:
             - name: app-data
               mountPath: /app/data          

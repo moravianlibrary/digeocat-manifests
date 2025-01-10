@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vdc-api-env-config
+data:
+  ALLOWED_HOSTS: "digeocat.mzk.cz,vdc.digeocat.mzk.cz,vdc.osdd.mzk.cz,api.vdc.osdd.mzk.cz"
+  RUN_PERIODIC_TASK: "True"
+  FE_URL: https://digeocat.mzk.cz
+  API_URL: https://vdc.digeocat.mzk.cz
+  DJANGO_DEBUG: "False"
+  MEDIA_URL: "/media/"

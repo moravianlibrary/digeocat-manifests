@@ -5,6 +5,7 @@ namespace: vdc-digeocat-prod
 
 resources:
   - vdc-api.yml
+  - vdc-api-config.yml
   - vdc-frontend.yml
 
 images:
