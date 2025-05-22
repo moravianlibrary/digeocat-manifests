@@ -8,5 +8,6 @@ data:
   FE_URL: https://editor.digeocat.mzk.cz
   API_URL: https://api.digeocat.mzk.cz
   PUBLIC_URL: https://digeocat.mzk.cz
+  RATELIMIT_ENABLE: "False"
   DJANGO_DEBUG: "False"
   MEDIA_URL: "/media/"
