@@ -12,10 +12,10 @@ resources:
 images:
 - name: mzk.cz/vdc-api
   newName: ghcr.io/moravianlibrary/vdc-api
-  newTag: 6f1c3864ffb325992f095f67ec8ab6acfe62021e
+  newTag: 51c5daec520c070dbcf76b40460b42be15e4e68f
 - name: mzk.cz/vdc-frontend
   newName: ghcr.io/moravianlibrary/vdc-frontend
-  newTag: 6f1c3864ffb325992f095f67ec8ab6acfe62021e
+  newTag: 51c5daec520c070dbcf76b40460b42be15e4e68f
 - name: mzk.cz/vdc-frontend-public
   newName: ghcr.io/moravianlibrary/vdc-frontend-public
-  newTag: 6f1c3864ffb325992f095f67ec8ab6acfe62021e
+  newTag: 51c5daec520c070dbcf76b40460b42be15e4e68f
